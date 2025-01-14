@@ -1,0 +1,94 @@
+body {
+  overflow-x: hidden;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.layout__container {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  border: 10px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout__img {
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  width: 550px;
+  z-index: 3;
+  display: none;
+}
+
+.layout__title {
+  position: absolute;
+  top: -20px;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+.layout__logo {
+  z-index: 2;
+  position: absolute;
+  top: 123px;
+  left: 246px;
+  width: 390px;
+  height: 443px;
+  background-color: #e54c21;
+  clip-path: polygon(0% 0%, 100% 0%, 91% 90%, 50% 100%, 9% 90%);
+}
+
+.logo__number {
+  position: absolute;
+  width: 243px;
+  height: 277px;
+  top: 81px;
+  left: 73px;
+  background: linear-gradient(
+    to right,
+    #ececec 0%,
+    #ececec 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    98% 18%,
+    50% 18%,
+    22% 18%,
+    23% 36%,
+    95% 36%,
+    90% 90%,
+    50% 100%,
+    9% 90%,
+    6% 62%,
+    26% 62%,
+    27% 76%,
+    50% 81%,
+    72% 76%,
+    75% 54%,
+    5% 54%
+  );
+}
+
+.logo__poligono {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  height: 376px;
+  width: 160px;
+  background-color: #f16524;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 90%, 0% 99%);
+}

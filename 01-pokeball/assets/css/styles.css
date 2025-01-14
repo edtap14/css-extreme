@@ -1,0 +1,75 @@
+:root {
+  --ball-width: 340px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.layout__container {
+    background-color: #ccc;
+  position: relative;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  border: 10px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout__img {
+  display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.layout__ball {
+  position: absolute;
+  width: var(--ball-width);
+  height: var(--ball-width);
+  border-radius: 50%;
+  border: 20px solid black;
+  overflow: hidden;
+}
+
+.ball__top {
+  background-color: #fe0000;
+  width: var(--ball-width);
+  height: calc(var(--ball-width) / 2.2);
+}
+
+.ball__bottom {
+  background-color: white;
+  width: var(--ball-width);
+  height: calc(var(--ball-width) / 2.2);
+}
+
+.ball__line {
+  background-color: black;
+  height: 27px;
+  width: var(--ball-width);
+  position: absolute;
+  margin-top: -20px;
+}
+
+.ball__button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 15px solid black;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
